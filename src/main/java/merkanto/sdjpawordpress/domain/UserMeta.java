@@ -14,6 +14,7 @@ public class UserMeta {
     private String metaKey;
 
     @Lob
+    @Column(columnDefinition = "longtext") // To store a long text file into the DBMS
     private String metaValue;
 
     public Long getId() {
